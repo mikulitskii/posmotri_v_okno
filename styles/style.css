@@ -231,11 +231,12 @@ ol {
 
 .content__list {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
   overflow-y: auto;
   block-size: 298px;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .content__list > li:last-child {
